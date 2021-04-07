@@ -17,14 +17,13 @@ class Ejercicio1Test {
 				"6, 2",
 				"14, 7"})*/
 	@CsvSource({"2, 1",
-		"10, 1",
-		"6, 1",
-		"14, 7"})
+				"10, 1",
+				"6, 1",
+				"14, 7"})
 	
 	void testTransformar(int input, int expected) {
 		Ejercicio1 c = new Ejercicio1();
 		assertEquals(expected, c.transformar(input));
-		// assertTrue(c.transformar(input)==expected);
 	}
 
 }

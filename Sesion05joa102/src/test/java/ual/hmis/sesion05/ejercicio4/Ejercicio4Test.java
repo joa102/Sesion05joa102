@@ -20,7 +20,6 @@ public class Ejercicio4Test {
 	void testCadena(String p1, String p2, String expected) {
 		Ejercicio4 e4 = new Ejercicio4();
 		assertEquals(expected, e4.cadena(p1, p2));
-		// assertTrue(c.transformar(input)==expected);
 	}
 	
 }
