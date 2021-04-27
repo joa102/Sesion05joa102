@@ -19,11 +19,11 @@ public class Vehiculo {
      */
     private double pesoVehiculo;
 
-//    /**
-//     * Vehiculo.
-//     */
-//    public Vehiculo() {
-//    }
+    /**
+     * Vehiculo.
+     */
+    public Vehiculo() {
+    }
 
     /**
      * @param nPasajeros
@@ -41,9 +41,12 @@ public class Vehiculo {
         return numPasajeros;
     }
 
-//    public void setNumPasajeros(int numPasajeros) {
-//        this.numPasajeros = numPasajeros;
-//    }
+    /**
+     * @param nPasajeros
+     */
+    public void setNumPasajeros(final int nPasajeros) {
+        this.numPasajeros = nPasajeros;
+    }
 
     /**
      * @return numRuedas
@@ -63,8 +66,11 @@ public class Vehiculo {
         return pesoVehiculo;
     }
 
-//    public void setPesoVehiculo(double peso) {
-//        this.pesoVehiculo = peso;
-//    }
+    /**
+     * @param pes
+     */
+    public void setPesoVehiculo(final double pes) {
+        this.pesoVehiculo = pes;
+    }
 
 }

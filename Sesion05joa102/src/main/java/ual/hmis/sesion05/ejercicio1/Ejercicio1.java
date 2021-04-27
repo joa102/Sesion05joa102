@@ -5,24 +5,16 @@ package ual.hmis.sesion05.ejercicio1;
  *
  */
 public class Ejercicio1 {
-    /**
-     *2.
-     */
-    private final int x2 = 2;
-    /**
-     * 3.
-     */
-    private final int x3 = 3;
-    /**
-     * 5.
-     */
-    private final int x5 = 5;
 
     /**
      * @param x
      * @return x
      */
     public int transformar(final int x) {
+
+        final int x2 = 2;
+        final int x3 = 3;
+        final int x5 = 5;
         int resultado = 0;
         if (x % x2 == 0) {
             resultado = transformar(x / x2);

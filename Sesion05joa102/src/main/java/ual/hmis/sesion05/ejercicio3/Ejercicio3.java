@@ -5,18 +5,6 @@ package ual.hmis.sesion05.ejercicio3;
  *
  */
 public class Ejercicio3 {
-    /**
-     * 0.
-     */
-    private final int x0 = 0;
-    /**
-     * x3.
-     */
-    private final int x5 = 5;
-    /**
-     * x5.
-     */
-    private final int x12 = 12;
 
     /**
      * @param x
@@ -24,7 +12,11 @@ public class Ejercicio3 {
      */
     public String cadena(final int x) {
 
-        String resultado = "";
+        final int x0 = 0;
+        final int x5 = 5;
+        final int x12 = 12;
+
+        StringBuilder resultado = new StringBuilder();
 
         if (x < x0) {
             return "numero erroneo";
@@ -39,9 +31,9 @@ public class Ejercicio3 {
             }
 
             for (int i = x0; i < valor; i++) {
-                resultado += "*";
+                resultado.append("*");
             }
         }
-        return resultado;
+        return resultado.toString();
     }
 }

@@ -5,10 +5,6 @@ package ual.hmis.sesion05.ejercicio2;
  *
  */
 public class Ejercicio2 {
-    /**
-     * 30.
-     */
-    private final int x1 = 30;
 
     /**
      * @param username
@@ -16,6 +12,9 @@ public class Ejercicio2 {
      * @return compruebaLoginEnBD
      */
     public boolean login(final String username, final String password) {
+
+        final int x1 = 30;
+
         // comprobar que sean distintos de vacio
         if (username.isEmpty() || password.isEmpty()) {
             return false;
@@ -62,12 +61,15 @@ public class Ejercicio2 {
      * @return boolean
      */
     public boolean compruebaLoginEnBD(final String username,
-                                        final String password) {
-        /*if (username.equals("user") && password.equals("Pass1")) {
-            return true;
-        } else {
-            return false;
-        }*/
+            final String password) {
+        /*
+         * if (username.equals("user") && password.equals("Pass1")) {
+         *  return true;
+         * }
+         * else {
+         *  return false;
+         *  }
+         */
         // método mock (simulado)
         return username.equals("user") && password.equals("Pass1");
     }
